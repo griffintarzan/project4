@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.content {
+  flex: 2;
+  padding-right: 20px;
+}
+
+.ban-list {
+  flex: 1;
+  background: #ffecec;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  min-width: 200px;
+}
+
+.ban-list h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #e63946;
+}
+
+.ban-item {
+  display: flex;
+  justify-content: space-between;
+  background: #ffb3b3;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.unban-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.unban-btn:hover {
+  color: #222;
+}
+
+.card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.card img {
+  max-width: 100%;  /* Ensures the image scales within the card */
+  max-height: 300px; /* Restrict overly large images */
+  height: auto;      /* Maintain aspect ratio */
+  display: block;    /* Prevents inline spacing issues */
+  margin: 0 auto;    /* Centers the image */
+  object-fit: contain; /* Ensures the full image is visible */
+}
+
+
+.dog-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.ban-btn, .fetch-btn {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ban-btn:hover, .fetch-btn:hover {
+  background-color: #e63946;
+}
